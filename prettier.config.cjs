@@ -11,4 +11,22 @@ module.exports = {
   semi: true,
   trailingComma: 'all',
   tabWidth: 2,
+  plugins: [
+    '@ianvs/prettier-plugin-sort-imports',
+    'prettier-plugin-tailwindcss',
+  ],
+  tailwindConfig: './tailwind.config.mjs',
+  importOrder: [
+    '^(astro/(.*)$)|^(astro$)',
+    '^(react/(.*)$)|^(react$)|^(react-native(.*)$)',
+    '<THIRD_PARTY_MODULES>',
+    '',
+    '^~/utils/(.*)$',
+    '^~/helpers/(.*)$',
+    '^~/components/(.*)$',
+    '^~/(.*)$',
+    '^[./]',
+  ],
+  importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
+  importOrderTypeScriptVersion: '5.0.4',
 };
