@@ -16,6 +16,14 @@ module.exports = {
     'prettier-plugin-tailwindcss',
     'prettier-plugin-astro',
   ],
+  overrides: [
+    {
+      files: '*.astro',
+      options: {
+        parser: 'astro',
+      },
+    },
+  ],
   tailwindConfig: './tailwind.config.mjs',
   importOrder: [
     '^(astro/(.*)$)|^(astro$)',
