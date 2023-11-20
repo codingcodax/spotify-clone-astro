@@ -9,8 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint . --ext .js,.ts,.astro src",
-    "format:check": "prettier --check . --cache --ignore-path .gitignore",
-    "format:write": "prettier --write . --cache --ignore-path .gitignore"
+    "format:check": "prettier --check . --cache --ignore-path .gitignore --plugin=prettier-plugin-astro",
+    "format:write": "prettier --write . --cache --ignore-path .gitignore --plugin=prettier-plugin-astro"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",
