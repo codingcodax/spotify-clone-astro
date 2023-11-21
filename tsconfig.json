@@ -30,14 +30,21 @@
       "~/*": [
         "./src/*"
       ]
-    }
+    },
+    /*  Plugins */
+    "plugins": [
+      {
+        "name": "@astrojs/ts-plugin"
+      }
+    ]
   },
   "include": [
     ".eslintrc.cjs",
+    "**/*.astro",
     "**/*.ts",
     "**/*.tsx",
     "**/*.cjs",
-    "**/*.mjs",
+    "**/*.mjs"
   ],
   "exclude": [
     "node_modules"
