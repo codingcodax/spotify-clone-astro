@@ -7,6 +7,7 @@ module.exports = {
     'plugin:astro/recommended',
     'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
+    'plugin:tailwindcss/recommended',
   ],
   overrides: [
     {
@@ -39,6 +40,8 @@ module.exports = {
             },
           },
         ],
+        'tailwindcss/classnames-order': 'off',
+        'tailwindcss/no-custom-classname': 'off',
       },
     },
   ],
