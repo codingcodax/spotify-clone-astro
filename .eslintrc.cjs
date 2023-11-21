@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unused-vars
+const path = require('path');
+
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
   extends: [
@@ -39,4 +42,9 @@ module.exports = {
       },
     },
   ],
+  parserOptions: {
+    project: true,
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    tsconfigRootDir: __dirname,
+  },
 };
