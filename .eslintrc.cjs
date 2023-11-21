@@ -3,6 +3,7 @@ module.exports = {
   extends: [
     'plugin:astro/recommended',
     'plugin:@typescript-eslint/recommended-type-checked',
+    'plugin:@typescript-eslint/stylistic-type-checked',
   ],
   overrides: [
     {
