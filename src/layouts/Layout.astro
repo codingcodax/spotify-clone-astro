@@ -1,4 +1,6 @@
 ---
+import { AsideMenu } from '~/components/AsideMenu/index.astro';
+
 interface Props {
   title: string;
 }
@@ -19,9 +21,7 @@ const { title } = Astro.props;
   <body
     class='relative h-screen p-2 gap-2 grid grid-cols-[350px_1fr] font-sans bg-black text-white overflow-y-auto grid-rows-[1fr_auto]'
   >
-    <aside class='flex-col flex overflow-y-auto'>
-      <p>aside</p>
-    </aside>
+    <AsideMenu />
     <slot />
     <footer class='col-span-2'><p>player</p></footer>
   </body>
