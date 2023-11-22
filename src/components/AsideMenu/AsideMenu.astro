@@ -1,4 +1,6 @@
 ---
+import HomeIcon from '~/icons/Home.astro';
+import SearchIcon from '~/icons/Search.astro';
 import AsideMenuItem from './AsideMenuItem.astro';
 ---
 
@@ -6,8 +8,8 @@ import AsideMenuItem from './AsideMenuItem.astro';
   <nav class='flex rounded-lg bg-zinc-900 flex-col flex-1 gap-2'>
     <div>
       <ul>
-        <AsideMenuItem href='/'>Home</AsideMenuItem>
-        <AsideMenuItem href='/search'>Search</AsideMenuItem>
+        <AsideMenuItem href='/'><HomeIcon /> Home</AsideMenuItem>
+        <AsideMenuItem href='/search'><SearchIcon /> Search</AsideMenuItem>
       </ul>
     </div>
   </nav>
