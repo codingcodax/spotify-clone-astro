@@ -1,15 +1,22 @@
 ---
 import HomeIcon from '~/icons/Home.astro';
+import LibraryIcon from '~/icons/Library.astro';
 import SearchIcon from '~/icons/Search.astro';
 import AsideMenuItem from './AsideMenuItem.astro';
 ---
 
 <aside class='flex-col flex overflow-y-auto'>
-  <nav class='flex rounded-lg bg-zinc-900 flex-col flex-1 gap-2'>
-    <div>
+  <nav class='flex flex-col flex-1 gap-2'>
+    <div class='flex rounded-lg bg-zinc-900 flex-col gap-2'>
       <ul>
         <AsideMenuItem href='/'><HomeIcon /> Home</AsideMenuItem>
         <AsideMenuItem href='/search'><SearchIcon /> Search</AsideMenuItem>
+      </ul>
+    </div>
+
+    <div class='flex rounded-lg bg-zinc-900 flex-1 flex-col gap-2'>
+      <ul>
+        <AsideMenuItem href='/'><LibraryIcon /> Tu bliblioteca</AsideMenuItem>
       </ul>
     </div>
   </nav>
